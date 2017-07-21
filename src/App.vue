@@ -25,7 +25,7 @@ export default {
 body {
   background: #f4f4f4;
   font: 12px/1.5 "hiragino sans gb",arial;
-  color: #555;
+  color: black;
 }
 a {
   color:black;
