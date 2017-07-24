@@ -13,7 +13,7 @@
         <h2>电台</h2>
         <ul>
           <li v-for="item in radioList">
-            <router-link :to="{name:'recom'}">
+            <router-link :to="{name:'musicList'}">
               <div>
                 <img :src="item.picUrl" alt="">
                 <span class="icon_play"></span>

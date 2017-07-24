@@ -1,0 +1,96 @@
+{
+	"music": {
+		"list": [
+			{
+			    "id": "109",
+			    "name": "一千年以后",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E5%A5%B9%E8%AF%B4.jpg",
+			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E4%B8%80%E5%8D%83%E5%B9%B4%E4%BB%A5%E5%90%8E.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "107",
+			    "name": "那些你很冒险的梦",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E9%82%A3%E4%BA%9B%E4%BD%A0%E5%BE%88%E5%86%92%E9%99%A9%E7%9A%84%E6%A2%A6.jpg",
+			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E9%82%A3%E4%BA%9B%E4%BD%A0%E5%BE%88%E5%86%92%E9%99%A9%E7%9A%84%E6%A2%A6.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "106",
+			    "name": "可惜没如果",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E5%8F%AF%E6%83%9C%E6%B2%A1%E6%9C%89%E5%A6%82%E6%9E%9C.jpg",
+			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E5%8F%AF%E6%83%9C%E6%B2%A1%E5%A6%82%E6%9E%9C.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "105",
+			    "name": "她说",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E5%A5%B9%E8%AF%B4.jpg",
+			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E5%A5%B9%E8%AF%B4.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "104",
+			    "name": "修炼爱情",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E4%BF%AE%E7%82%BC%E7%88%B1%E6%83%85.jpg",
+			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E4%BF%AE%E7%82%BC%E7%88%B1%E6%83%85.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "103",
+			    "name": "当你",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E5%A5%B9%E8%AF%B4.jpg",
+			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E5%BD%93%E4%BD%A0.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "101",
+			    "name": "不为谁而作的歌",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E5%A5%B9%E8%AF%B4.jpg",
+			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E4%B8%8D%E4%B8%BA%E8%B0%81%E8%80%8C%E4%BD%9C%E7%9A%84%E6%AD%8C.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "100",
+			    "name": "爱笑的眼睛",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E6%88%91%E8%BF%98%E6%83%B3%E5%A5%B9.jpg",
+			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E7%88%B1%E7%AC%91%E7%9A%84%E7%9C%BC%E7%9D%9B.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "98",
+			    "name": "江南",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E6%B1%9F%E5%8D%97.jpg",
+			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E6%B1%9F%E5%8D%97.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "97",
+			    "name": "我还想她",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E6%88%91%E8%BF%98%E6%83%B3%E5%A5%B9.jpg",
+			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E6%88%91%E8%BF%98%E6%83%B3%E5%A5%B9.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			}
+		]
+	}
+}

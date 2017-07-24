@@ -1,5 +1,6 @@
 import App from '../App.vue'
 import recom from '../pages/recom/recom.vue'
+import musicList from '../pages/musicList/musicList.vue'
 
 export default [{
     path: '/',
@@ -10,17 +11,18 @@ export default [{
             path: '',
             redirect: '/recom'
         },
-        //头条
+        //首页
         {
             name: 'recom',
             path: '/recom',
             component: recom
         },
-        // //所有商铺列表页
-        // {
-        //     path: '/msite',
-        //     component: msite,
-        // },
+        //音乐列表
+        {
+            name: 'musicList',
+            path: '/musicList',
+            component: musicList
+        },
         // //特色商铺列表页
         // {
         //     path: '/food',
