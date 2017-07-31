@@ -1,6 +1,7 @@
 import App from '../App.vue'
 import recom from '../pages/recom/recom.vue'
 import musicList from '../pages/musicList/musicList.vue'
+import musicDetail from '../pages/musicDetail/musicDetail.vue'
 
 export default [{
     path: '/',
@@ -22,6 +23,12 @@ export default [{
             name: 'musicList',
             path: '/musicList',
             component: musicList
+        },
+        //音乐播放页面
+        {
+            name: 'musicDetail',
+            path: '/musicDetail',
+            component: musicDetail
         },
         // //特色商铺列表页
         // {

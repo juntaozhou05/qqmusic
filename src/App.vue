@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mainCover">
     <transition name="router-fade" mode="out-in">
       <router-view></router-view>
     </transition>
@@ -22,10 +22,16 @@ export default {
   margin:0;
   padding:0;
 }
+html {
+  width: 100%;
+  height: 100%;
+}
 body {
   background: #f4f4f4;
   font: 12px/1.5 "hiragino sans gb",arial;
   color: black;
+  width: 100%;
+  height: 100%;
 }
 a {
   color:black;
@@ -39,12 +45,16 @@ input, textarea {
   outline: none;
   border-radius: 2px;
 }
+.mainCover {
+  width: 100%;
+  height: 100%;
+}
 .icon {
   border-radius: 50%;
   border:2px solid gray;
 }
 .router-fade-enter-active, .router-fade-leave-active {
-    transition: opacity .1s;
+    transition: opacity .3s;
 }
 .router-fade-enter, .router-fade-leave-active {
     opacity: 0;

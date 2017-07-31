@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="list">
-      <div class="item" v-for="item in list">
+      <router-link :to="{name:'musicDetail',query: {id:item.id}}" class="item" v-for="item in list">
         <div class="left">
           <img class="img_url" :src="item.img_url" alt="" width="60" height="60">
         </div>
@@ -17,7 +17,7 @@
           <div class="name">{{item.name}}</div>
           <div class="singer">{{item.singer}} / {{item.type}}</div>
         </div>
-      </div>
+      </router-link>
     </div>
     <footer class="footer">
       <div class="bottom">
