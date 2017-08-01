@@ -8,13 +8,16 @@
         <div class="singer">{{singer}}</div>
         <div class="img">
           <img src="../../static/img/cd-mine.png" alt="" width="250">
-          <img :src="img_url" alt="" class="img_url cir" width="165" ref="imgUrl">
+          <img :src="img_url" alt="" class="img_url cir" :class="{paused: !play, running: play}" width="165" ref="imgUrl">
         </div> 
       </div>
       <div class="lyric">暂无相关歌词</div>
-      <audio :src="url"></audio>
+      <audio :src="url" ref="audio"></audio>
       <div class="playControl">
-        
+        <div class="pre"></div>
+        <div class="play" v-if="!play" @click="playFn"></div>
+        <div class="pause" v-if="play" @click="pauseFn"></div>
+        <div class="next"></div>
       </div>
     </div>
   </div>
@@ -31,7 +34,8 @@ export default {
       img_url: '',
       name: '',
       singer: '',
-      url: ''
+      url: '',
+      play: false
     }
   },
   mounted: function() {
@@ -62,6 +66,17 @@ export default {
       window.history.go(-1);
       Indicator.open();
     },
+    //播放
+    playFn: function() {
+      this.$refs.audio.play();
+      this.play = true
+    },
+    //暂停
+    pauseFn: function() {
+      this.$refs.audio.pause();
+      this.play = false;
+    }
+
   }
 }
 </script>
@@ -145,6 +160,45 @@ export default {
         height: 80px;
         border-top: 1px solid #eaeaea;
         width: 100%;
+        display: flex;
+        padding:20px;
+        box-sizing: border-box;
+        justify-content: space-around;
+        z-index: 50;
+        .pre {
+          background-image: url(../../static/img/player.png);
+          top: 4px;
+          left: 0;
+          width: 19px;
+          height: 20px;
+          background-position: 0 -30px;
+        }
+        .play {
+          background-image: url(../../static/img/player.png);
+          top: 5px;
+          left: 76px;
+          width: 21px;
+          height: 29px;
+          background-position: 0 0;
+          margin-top: -4px;
+        }
+        .pause {
+          background-image: url(../../static/img/player.png);
+          top: 0;
+          left: 76px;
+          width: 21px;
+          height: 29px;
+          background-position: -30px 0;
+          margin-top: -4px;
+        }
+        .next {
+          background-image: url(../../static/img/player.png);
+          top: 4px;
+          left: 148px;
+          width: 19px;
+          height: 20px;
+          background-position: 0 -52px;
+        }
       }
     }
     
