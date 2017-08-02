@@ -13,6 +13,13 @@
       </div>
       <div class="lyric">暂无相关歌词</div>
       <audio :src="url" ref="audio"></audio>
+      <div class="times">
+        <span class="current">{{current}}</span>
+        <div class="totalTime" ref="totalTime">
+          <div class="currentLine" ref="currentLine"></div>
+        </div>
+        <span class="max">{{max}}</span>
+      </div>
       <div class="playControl">
         <div class="pre"></div>
         <div class="play" v-if="!play" @click="playFn"></div>
@@ -35,7 +42,12 @@ export default {
       name: '',
       singer: '',
       url: '',
-      play: false
+      play: false,
+      max: '0:00',
+      current: '0:00',
+      settime: 1,
+      currentsec: 0,
+      currentmin: 0
     }
   },
   mounted: function() {
@@ -69,14 +81,40 @@ export default {
     //播放
     playFn: function() {
       this.$refs.audio.play();
-      this.play = true
+      this.play = true;
+      let maxTime = Math.floor(this.$refs.audio.duration);
+      let min = Math.floor(maxTime/60);
+      let sec = maxTime%60;
+      if(sec < 10) {
+        this.max = min + ":0" + sec;
+      }else {
+        this.max = min + ":" + sec;
+      }
+      setInterval(()=>{
+        this.settime++ ;
+        this.currentsec++;
+        if(this.currentsec < 10) {
+          this.current = this.currentmin + ":0" + this.currentsec;
+        }else if(this.currentsec >= 10) {
+          this.current = this.currentmin + ":" + this.currentsec;
+        }else if(this.currentsec == 59) {
+          this.current = this.currentmin + ":" + this.currentsec;
+          this.currentmin++;
+          this.currentsec = 0;
+        }
+        if(this.settime < maxTime) {
+          this.$refs.currentLine.style.width =( this.settime + 1) +"px";
+        }
+      },1000);
+      
     },
     //暂停
     pauseFn: function() {
       this.$refs.audio.pause();
       this.play = false;
     }
-
+  },
+  computed: {
   }
 }
 </script>
@@ -158,7 +196,6 @@ export default {
         bottom: 0;
         left:0;
         height: 80px;
-        border-top: 1px solid #eaeaea;
         width: 100%;
         display: flex;
         padding:20px;
@@ -200,7 +237,34 @@ export default {
           background-position: 0 -52px;
         }
       }
+      .times {
+        position: absolute;
+        bottom: 90px;
+        width: 100%;
+        z-index: 55;
+        text-align: center;
+        .max {
+          color:white;
+        }
+        .current {
+          color:white;
+        }
+        .totalTime {
+          width: 70%;
+          height: 2px;
+          background: #eaeaea;
+          display: inline-block;
+          vertical-align: middle;
+          margin:0 5px;
+          .currentLine {
+            width: 0;
+            background:gray;
+            height: 2px;
+          }
+        }
+      } 
     }
+
     
   }
 </style>
