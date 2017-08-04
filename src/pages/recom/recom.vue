@@ -4,21 +4,32 @@
     <div class="content_wrapper">
       <div class="swipe">
         <mt-swipe :auto="4000">
-          <mt-swipe-item v-for='item in slider'>
-            <img :src="item.picUrl" alt="" width="100%" height="100%">
+          <mt-swipe-item v-for='item,index in slider'>
+            <router-link :to="{name:'musicTop',query: {id:index}}">
+              <img :src="item.picUrl" alt="" width="100%" height="100%">
+            </router-link>
           </mt-swipe-item>
         </mt-swipe>
       </div>
       <div class="mod_list">
         <h2>电台</h2>
         <ul>
-          <li v-for="item in radioList">
-            <router-link :to="{name:'musicList'}">
+          <li>
+            <router-link :to="{name:'musicOne'}">
               <div>
-                <img :src="item.picUrl" alt="">
+                <img :src="picUrl1" alt="">
                 <span class="icon_play"></span>
               </div>
-              <div class="list_info">{{item.Ftitle}}</div>
+              <div class="list_info">{{Ftitle1}}</div>
+            </router-link>
+          </li>
+          <li>
+            <router-link :to="{name:'musicList'}">
+              <div>
+                <img :src="picUrl2" alt="">
+                <span class="icon_play"></span>
+              </div>
+              <div class="list_info">{{Ftitle2}}</div>
             </router-link>
           </li>
         </ul>
@@ -67,7 +78,11 @@ export default {
     return {
       slider: [],
       radioList:[],
-      songList: []
+      songList: [],
+      picUrl1: '',
+      picUrl2: '',
+      Ftitle1: '',
+      Ftitle2: ''
     }
   },
   mounted: function() {
@@ -90,6 +105,10 @@ export default {
         this.slider = res.body.data.slider;
         this.radioList = res.body.data.radioList;
         this.songList = res.body.data.songList;
+        this.picUrl1 = res.body.data.radioList[0].picUrl;
+        this.picUrl2 = res.body.data.radioList[1].picUrl;
+        this.Ftitle1 = res.body.data.radioList[0].Ftitle;
+        this.Ftitle2 = res.body.data.radioList[1].Ftitle;
       });
     }
   },

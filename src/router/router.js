@@ -1,6 +1,8 @@
 import App from '../App.vue'
 import recom from '../pages/recom/recom.vue'
 import musicList from '../pages/musicList/musicList.vue'
+import musicOne from '../pages/musicOne/musicOne.vue'
+import musicTop from '../pages/musicTop/musicTop.vue'
 import musicDetail from '../pages/musicDetail/musicDetail.vue'
 
 export default [{
@@ -18,11 +20,23 @@ export default [{
             path: '/recom',
             component: recom
         },
-        //音乐列表
+        //热歌列表
         {
             name: 'musicList',
             path: '/musicList',
             component: musicList
+        },
+        //一人一首招牌歌列表
+        {
+            name: 'musicOne',
+            path: '/musicOne',
+            component: musicOne
+        },
+        //轮播列表
+        {
+            name: 'musicTop',
+            path: '/musicTop',
+            component: musicTop
         },
         //音乐播放页面
         {

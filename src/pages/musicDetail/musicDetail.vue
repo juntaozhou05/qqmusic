@@ -22,8 +22,8 @@
       </div>
       <div class="playControl">
         <div class="pre"></div>
-        <div class="play" v-if="!play" @click="playFn"></div>
-        <div class="pause" v-if="play" @click="pauseFn"></div>
+        <div class="play" v-if="!play" @click="playFn('play')"></div>
+        <div class="pause" v-if="play" @click="pauseFn()"></div>
         <div class="next"></div>
       </div>
     </div>
@@ -47,12 +47,19 @@ export default {
       current: '0:00',
       settime: 1,
       currentsec: 0,
-      currentmin: 0
+      currentmin: 0,
+      type: '',
+      timer: ''
     }
   },
   mounted: function() {
     Indicator.open();
-    this.load();
+    this.type = this.$route.query.type;
+    if(this.type == 1) {
+      this.load2();
+    }else {
+      this.load();
+    }
   },
   methods: {
     load: function() {
@@ -74,44 +81,70 @@ export default {
         }
       });
     },
-    back: ()=>{
+    load2: function() {
+      this.$http.get('../../musicOne.json', {
+        }, 
+        {emulateJSON: true}
+        )
+      .then((res) => {
+        Indicator.close();
+        console.log(res.body.music);
+        this.list = res.body.music.list;
+        for(let i=0;i<this.list.length;i++) {
+          if(this.id == this.list[i].id) {
+            this.img_url = this.list[i].img_url;
+            this.name = this.list[i].name;
+            this.singer = this.list[i].singer;
+            this.url = this.list[i].url;
+          }
+        }
+      });
+    },
+    back: function() {
+      this.$refs.audio.pause();
+      this.play = false;
+      clearInterval(this.timer);
       window.history.go(-1);
       Indicator.open();
     },
     //播放
-    playFn: function() {
-      this.$refs.audio.play();
-      this.play = true;
-      let maxTime = Math.floor(this.$refs.audio.duration);
-      let min = Math.floor(maxTime/60);
-      let sec = maxTime%60;
-      if(sec < 10) {
-        this.max = min + ":0" + sec;
-      }else {
-        this.max = min + ":" + sec;
+    playFn: function(val) {
+      if(val == 'play') {
+        this.$refs.audio.play();
+        this.play = true;
+        let maxTime = Math.floor(this.$refs.audio.duration);
+        let min = Math.floor(maxTime/60);
+        let sec = maxTime%60;
+        if(sec < 10) {
+          this.max = min + ":0" + sec;
+        }else {
+          this.max = min + ":" + sec;
+        }
+        this.timer = setInterval(()=>{
+          this.settime++ ;
+          this.currentsec++;
+          if(this.currentsec < 10) {
+            this.current = this.currentmin + ":0" + this.currentsec;
+          }
+          if(this.currentsec >= 10) {
+            this.current = this.currentmin + ":" + this.currentsec;
+          }
+          if(this.currentsec == 60) {
+            this.currentmin++;
+            this.currentsec = 0;
+            this.current = this.currentmin + ":00";
+          }
+          if(this.settime < maxTime) {
+            this.$refs.currentLine.style.width =( this.settime + 1) +"px";
+          }
+        },1000);
       }
-      setInterval(()=>{
-        this.settime++ ;
-        this.currentsec++;
-        if(this.currentsec < 10) {
-          this.current = this.currentmin + ":0" + this.currentsec;
-        }else if(this.currentsec >= 10) {
-          this.current = this.currentmin + ":" + this.currentsec;
-        }else if(this.currentsec == 59) {
-          this.current = this.currentmin + ":" + this.currentsec;
-          this.currentmin++;
-          this.currentsec = 0;
-        }
-        if(this.settime < maxTime) {
-          this.$refs.currentLine.style.width =( this.settime + 1) +"px";
-        }
-      },1000);
-      
     },
     //暂停
     pauseFn: function() {
       this.$refs.audio.pause();
       this.play = false;
+      clearInterval(this.timer);
     }
   },
   computed: {
@@ -131,12 +164,12 @@ export default {
       font-size: 16px;
       z-index: 15;
       width: 100%;
-      background-color: rgba(0,0,0,0.5);
       padding:10px;
+      box-sizing: border-box;
     }
     .cover {
       width: 100%;
-      height: 100%;
+      height: 98%;
       .imgCover {
         position: fixed;
         top:0;
@@ -179,6 +212,7 @@ export default {
       }
       .background {
         height: 100%;
+        width: 100%;
         filter: blur(19px);
       }
       .lyric {
@@ -243,11 +277,9 @@ export default {
         width: 100%;
         z-index: 55;
         text-align: center;
-        .max {
+        .max,.current {
           color:white;
-        }
-        .current {
-          color:white;
+          opacity: 0.6;
         }
         .totalTime {
           width: 70%;
@@ -256,9 +288,10 @@ export default {
           display: inline-block;
           vertical-align: middle;
           margin:0 5px;
+          opacity: 0.6;
           .currentLine {
             width: 0;
-            background:gray;
+            background:#31c27c;
             height: 2px;
           }
         }

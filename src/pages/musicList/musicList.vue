@@ -2,7 +2,7 @@
   <div class="musicList">
     <div class="back" @click="back">返回</div>
     <div class="top">
-      <img :src="topImg" alt="" >
+      <img :src="topImg" alt="" width="100%;">
       <div class="detail">
         <div class="title">好听的个人专辑</div>
         <div>2010-7-24 更新</div>
@@ -42,10 +42,6 @@ export default {
     }
   },
   mounted: function() {
-    if(this.userId == 0) {
-      this.$router.push('/login');
-      return;
-    }
     Indicator.open();
     this.load();
   },
@@ -81,8 +77,8 @@ export default {
       font-size: 16px;
       z-index: 11;
       width: 100%;
-      background-color: rgba(0,0,0,0.5);
       padding:10px;
+      box-sizing: border-box;
     }
     .top {
       height: 300px;
@@ -94,11 +90,13 @@ export default {
         left:0;
         color:white;
         font-size: 15px;
-        background-color: rgba(0,0,0,0.5);
+        background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(0,0,0,0.0)), to(rgba(0, 0, 0, 1)));
+        height: 180px;
         width: 100%;
-        padding:10px 20px 10px;
+        line-height: 250px;
         .title {
           font-size: 22px;
+          margin-left: 20px;
         }
       }
     }
