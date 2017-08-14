@@ -3,10 +3,10 @@
     <div class="back" @click="back">返回</div>
     <div class="top">
       <img :src="topImg" alt="" width="100%">
-      <div class="title">一人一招牌歌</div>
+      <div class="title">{{title}}</div>
     </div>
     <div class="list">
-      <router-link :to="{name:'musicDetail',query: {id:item.id, type:1}}" class="item" v-for="item,index in list">
+      <router-link :to="{name:'musicDetail',query: {id:item.id, type:type}}" class="item" v-for="item,index in list">
         <div class="left">{{index+1}}</div>
         <div class="right">
           <div class="top">{{item.name}}</div>
@@ -24,6 +24,8 @@ export default {
   data () {
     return {
       topImg: '',
+      title: '一人一招牌歌',
+      type:1,
       list: []
     }
   },
@@ -37,7 +39,26 @@ export default {
       Indicator.open();
     },
     load: function() {
-      this.$http.get('../../musicOne.json', {
+      let jsonAdre = '';
+      let listId = this.$route.query.listId;
+      if(listId == -1) {
+        jsonAdre = '../../musicOne.json';
+      }else if(listId == 0) {
+        jsonAdre = '../../musicOne.json';
+      }else if(listId == 1) {
+        jsonAdre = '../../musicOne.json';
+      }else if(listId == 2) {
+        jsonAdre = '../../musicOne.json';
+      }else if(listId == 3) {
+        jsonAdre = '../../musicOne.json';
+      }else if(listId == 4) {
+        this.title = "动漫金曲";
+        jsonAdre = '../../anime.json';
+        this.type = 4;
+      }else if(listId == 5) {
+        jsonAdre = '../../musicOne.json';
+      }
+      this.$http.get(jsonAdre, {
         }, 
         {emulateJSON: true}
         )

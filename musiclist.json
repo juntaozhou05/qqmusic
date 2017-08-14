@@ -2,16 +2,16 @@
 	"music": {
 		"list": [
 			{
-			    "id": "109",
+			    "id": "1",
 			    "name": "一千年以后",
 			    "singer": "林俊杰",
 			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E5%A5%B9%E8%AF%B4.jpg",
-			    "url": "http://oiq8j9er1.bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E4%B8%80%E5%8D%83%E5%B9%B4%E4%BB%A5%E5%90%8E.mp3",
+			    "url": "http://up.mcyt.net/md5/17/MzU4NDYxNA_Qq4329912.mp3",
 			    "type": "华语 林俊杰",
 				"lyric": ""
 			},
 			{
-			    "id": "106",
+			    "id": "2",
 			    "name": "可惜没如果",
 			    "singer": "林俊杰",
 			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E5%8F%AF%E6%83%9C%E6%B2%A1%E6%9C%89%E5%A6%82%E6%9E%9C.jpg",
@@ -20,16 +20,16 @@
 				"lyric": ""
 			},
 			{
-			    "id": "105",
+			    "id": "3",
 			    "name": "她说",
 			    "singer": "林俊杰",
 			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E5%A5%B9%E8%AF%B4.jpg",
-			    "url": "http://dl.stream.qqmusic.qq.com/C400001IpbDW34m1Gy.m4a?vkey=89E08F55683AB1E0388D4591B8515BDF9C380A95B400B34E6ED275C5446EF28DC5550090BACC751F3794677793330F0E367E7BA0FB014DCF&guid=829787700&uin=191136674&fromtag=66",
+			    "url": "http://up.mcyt.net/md5/53/ODkxNzEy_Qq4329912.mp3",
 			    "type": "华语 林俊杰",
 				"lyric": ""
 			},
 			{
-			    "id": "101",
+			    "id": "4",
 			    "name": "不为谁而作的歌",
 			    "singer": "林俊杰",
 			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E5%A5%B9%E8%AF%B4.jpg",
@@ -38,29 +38,56 @@
 				"lyric": ""
 			},
 			{
-			    "id": "100",
+			    "id": "5",
 			    "name": "爱笑的眼睛",
 			    "singer": "林俊杰",
 			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E6%88%91%E8%BF%98%E6%83%B3%E5%A5%B9.jpg",
-			    "url": "http://dl.stream.qqmusic.qq.com/C400004JI7mA1UQeZq.m4a?vkey=1E6CCEB60892A1BA18D4FA9FBD93B4F2AB9E49ADD93ECA2B61273A6E27BFF01B8F612696FA104E49A943BFFA70070F69B9E317E29752D072&guid=829787700&uin=191136674&fromtag=66",
+			    "url": "http://up.mcyt.net/md5/17/MzU4NDYyNw_Qq4329912.mp3",
 			    "type": "华语 林俊杰",
 				"lyric": ""
 			},
 			{
-			    "id": "98",
+			    "id": "6",
 			    "name": "江南",
 			    "singer": "林俊杰",
 			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E6%B1%9F%E5%8D%97.jpg",
-			    "url": "http://dl.stream.qqmusic.qq.com/C400004TXEXY2G2c7C.m4a?vkey=898F157C7ABFC9E59621437F00B210C087A788766308162AF216F14C7C60B57AC2DC4427A61FCBA8EA4AE7BC3239B900F0ECC2EC4DF13283&guid=829787700&uin=191136674&fromtag=66",
+			    "url": "http://up.mcyt.net/md5/53/OTMxNTc=_Qq4329912.mp3",
 			    "type": "华语 林俊杰",
 				"lyric": ""
 			},
 			{
-			    "id": "97",
+			    "id": "7",
 			    "name": "我还想她",
 			    "singer": "林俊杰",
 			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E6%88%91%E8%BF%98%E6%83%B3%E5%A5%B9.jpg",
-			    "url": "http://dl.stream.qqmusic.qq.com/C400003gUMnj3mMwLZ.m4a?vkey=451338751ECDC93A83AE7958C0F1B3740F805048EA127D0E7AA2F6222C70AC61C7806F1634B23A3820B6C6747819E070217FFFE7E4A4EF51&guid=829787700&uin=191136674&fromtag=66",
+			    "url": "http://up.mcyt.net/md5/17/MTUxMjkyNg_Qq4329912.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "8",
+			    "name": "小酒窝",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E6%88%91%E8%BF%98%E6%83%B3%E5%A5%B9.jpg",
+			    "url": "http://up.mcyt.net/md5/53/MzQyNzQ3OQ_Qq4329912.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "9",
+			    "name": "背对背拥抱",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E6%88%91%E8%BF%98%E6%83%B3%E5%A5%B9.jpg",
+			    "url": "http://up.mcyt.net/md5/53/NjI1Mzkx_Qq4329912.mp3",
+			    "type": "华语 林俊杰",
+				"lyric": ""
+			},
+			{
+			    "id": "9",
+			    "name": "曹操",
+			    "singer": "林俊杰",
+			    "img_url": "http://oiq8j9er1.bkt.clouddn.com/music_%E6%88%91%E8%BF%98%E6%83%B3%E5%A5%B9.jpg",
+			    "url": "http://up.mcyt.net/md5/17/MTAxMDE0_Qq4329912.mp3",
 			    "type": "华语 林俊杰",
 				"lyric": ""
 			}

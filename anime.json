@@ -1,0 +1,62 @@
+{
+	"music": {
+		"title": "动漫金曲",
+		"topImg":"http://img2.ali213.net/picfile/News/2015/10/09/584_2015100954230540.jpg",
+		"list": [
+			{
+			    "id": "1",
+			    "name": "IGNITE",
+			    "singer": "藍井エイル",
+			    "img_url": "http://img2.ali213.net/picfile/News/2015/10/09/584_2015100954232427.jpg",
+			    "url": "http://up.mcyt.net/md5/53/NDg0NjQ2OQ_Qq4329912.mp3",
+			    "type": "动漫 《刀剑神域第二季》片头曲",
+				"lyric": ""
+			},
+			{
+			    "id": "2",
+			    "name": "君の知らない物語 (你所不知道的故事)",
+			    "singer": "supercell",
+			    "img_url": "https://y.gtimg.cn/music/photo_new/T002R150x150M0000018m8aS25jDHK.jpg?max_age=2592000",
+			    "url": "http://up.mcyt.net/md5/53/NTUyODky_Qq4329912.mp3",
+			    "type": "动漫 杨丞琳",
+				"lyric": ""
+			},
+			{
+			    "id": "3",
+			    "name": "好想大声说喜欢你",
+			    "singer": "灌篮高手",
+			    "img_url": "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=712966633,2295645920&fm=58",
+			    "url": "http://up.mcyt.net/md5/53/NTQxNDc0_Qq4329912.mp3",
+			    "type": "动漫 王铮亮",
+				"lyric": ""
+			},
+			{
+			    "id": "4",
+			    "name": "残酷な天使のテーゼ",
+			    "singer": "高橋洋子",
+			    "img_url": "https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D500/sign=2f8c2db072ec54e745ec1a1e89399bfd/cdbf6c81800a19d8b28d248b3afa828ba71e46b5.jpg",
+			    "url": "http://up.mcyt.net/md5/53/NTEzNTgyOQ_Qq4329912.mp3",
+			    "type": "动漫 EVA",
+				"lyric": ""
+			},
+			{
+			    "id": "5",
+			    "name": "紅蓮の弓矢",
+			    "singer": "LinkedHorizon",
+			    "img_url": "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=260193416,3017470912&fm=58&u_exp_0=3988127097,2684165502&fm_exp_0=86&bpow=479&bpoh=703",
+			    "url": "http://up.mcyt.net/md5/53/NjgxNjI0MA_Qq4329912.mp3",
+			    "type": "动漫 进击的巨人",
+				"lyric": ""
+			},
+			{
+			    "id": "6",
+			    "name": "青鸟",
+			    "singer": "火影忍者",
+			    "img_url": "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=958512776,2704315940&fm=58",
+			    "url": "http://up.mcyt.net/md5/53/NDczNzk0_Qq4329912.mp3",
+			    "type": "动漫 火影忍者",
+				"lyric": ""
+			}
+		]
+	}
+}

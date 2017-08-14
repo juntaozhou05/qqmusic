@@ -49,21 +49,25 @@ export default {
       currentsec: 0,
       currentmin: 0,
       type: '',
-      timer: ''
+      timer: '',
+      jsonAdre: ''
     }
   },
   mounted: function() {
     Indicator.open();
     this.type = this.$route.query.type;
     if(this.type == 1) {
-      this.load2();
+      this.jsonAdre = '../../musicOne.json';
+    }else if(this.type == 4){
+      this.jsonAdre = '../../anime.json';
     }else {
-      this.load();
-    }
+      this.jsonAdre = '../../musicList.json'
+    };
+    this.load();
   },
   methods: {
     load: function() {
-      this.$http.get('../../musiclist.json', {
+      this.$http.get(this.jsonAdre, {
         }, 
         {emulateJSON: true}
         )
@@ -71,33 +75,11 @@ export default {
         Indicator.close();
         console.log(res.body.music);
         this.list = res.body.music.list;
-        for(let i=0;i<this.list.length;i++) {
-          if(this.id == this.list[i].id) {
-            this.img_url = this.list[i].img_url;
-            this.name = this.list[i].name;
-            this.singer = this.list[i].singer;
-            this.url = this.list[i].url;
-          }
-        }
-      });
-    },
-    load2: function() {
-      this.$http.get('../../musicOne.json', {
-        }, 
-        {emulateJSON: true}
-        )
-      .then((res) => {
-        Indicator.close();
-        console.log(res.body.music);
-        this.list = res.body.music.list;
-        for(let i=0;i<this.list.length;i++) {
-          if(this.id == this.list[i].id) {
-            this.img_url = this.list[i].img_url;
-            this.name = this.list[i].name;
-            this.singer = this.list[i].singer;
-            this.url = this.list[i].url;
-          }
-        }
+        this.img_url = this.list[this.id - 1].img_url;
+
+        this.name = this.list[this.id - 1].name;
+        this.singer = this.list[this.id - 1].singer;
+        this.url = this.list[this.id - 1].url;
       });
     },
     back: function() {
@@ -297,7 +279,5 @@ export default {
         }
       } 
     }
-
-    
   }
 </style>

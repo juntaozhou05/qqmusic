@@ -1,0 +1,89 @@
+{
+	"music": {
+		"title": "动漫金曲",
+		"topImg":"http://img2.ali213.net/picfile/News/2015/10/09/584_2015100954230540.jpg",
+		"list": [
+			{
+			    "id": "1",
+			    "name": "IGNITE",
+			    "singer": "藍井エイル",
+			    "img_url": "http://img2.ali213.net/picfile/News/2015/10/09/584_2015100954232427.jpg",
+			    "url": "http://up.mcyt.net/md5/53/NDg0NjQ2OQ_Qq4329912.mp3",
+			    "type": "动漫 《刀剑神域第二季》片头曲",
+				"lyric": ""
+			},
+			{
+			    "id": "2",
+			    "name": "君の知らない物語 (你所不知道的故事)",
+			    "singer": "supercell",
+			    "img_url": "https://y.gtimg.cn/music/photo_new/T002R150x150M0000018m8aS25jDHK.jpg?max_age=2592000",
+			    "url": "君の知らない物語",
+			    "type": "华语 杨丞琳",
+				"lyric": ""
+			},
+			{
+			    "id": "3",
+			    "name": "时间都去哪了",
+			    "singer": "王铮亮",
+			    "img_url": "https://y.gtimg.cn/music/photo_new/T002R150x150M000004STwBC3v0wO1.jpg?max_age=2592000",
+			    "url": "http://dl.stream.qqmusic.qq.com/C400003DP3ap19rTby.m4a?fromtag=38&vkey=5B79F505ED88E4C3C6729877EC5868767DD6AFF7D7B2E9940C4E45B61AEB749BFE7A16CB456C47A25DDC1846E305CC064657CE08F688A866&guid=829787700",
+			    "type": "华语 王铮亮",
+				"lyric": ""
+			},
+			{
+			    "id": "4",
+			    "name": "断点",
+			    "singer": "张敬轩",
+			    "img_url": "https://y.gtimg.cn/music/photo_new/T002R150x150M000002qifmS3hACg9.jpg?max_age=2592000",
+			    "url": "http://dl.stream.qqmusic.qq.com/C400000sqTJA0gSgGh.m4a?fromtag=38&vkey=71FBE898AD961F979BEF4D4ADBE73EBA6800CB01B888AF7EEA9394FA4AEDBFC11F439133542652512086C307554E801B1D79A096E66BB1C1&guid=829787700",
+			    "type": "华语 张敬轩",
+				"lyric": ""
+			},
+			{
+			    "id": "5",
+			    "name": "下一个天亮",
+			    "singer": "郭静",
+			    "img_url": "https://y.gtimg.cn/music/photo_new/T002R150x150M000003PKZMI1Wyx1A.jpg?max_age=2592000",
+			    "url": "http://dl.stream.qqmusic.qq.com/C400000hwIui3xVub9.m4a?fromtag=38&vkey=71FBE898AD961F979BEF4D4ADBE73EBA6800CB01B888AF7EEA9394FA4AEDBFC11F439133542652512086C307554E801B1D79A096E66BB1C1&guid=829787700",
+			    "type": "华语 郭静",
+				"lyric": ""
+			},
+			{
+			    "id": "6",
+			    "name": "父亲",
+			    "singer": "筷子兄弟",
+			    "img_url": "https://y.gtimg.cn/music/photo_new/T002R150x150M000000anHZA2CuwxK.jpg?max_age=2592000",
+			    "url": "http://dl.stream.qqmusic.qq.com/C400004TSZYg2HaHQi.m4a?fromtag=38&vkey=71FBE898AD961F979BEF4D4ADBE73EBA6800CB01B888AF7EEA9394FA4AEDBFC11F439133542652512086C307554E801B1D79A096E66BB1C1&guid=829787700",
+			    "type": "华语 筷子兄弟",
+				"lyric": ""
+			},
+			{
+			    "id": "7",
+			    "name": "我还想她",
+			    "singer": "李行亮",
+			    "img_url": "https://y.gtimg.cn/music/photo_new/T002R150x150M000000KdeES4gb2yb.jpg?max_age=2592000",
+			    "url": "http://dl.stream.qqmusic.qq.com/C400002pTIXQ3UVAVP.m4a?fromtag=38&vkey=DD2E4FE726EC883418D1CF7FC4D5824FFAADB1B3B03A864D175B4B6E3C5B2FA3C93D44DA99D87613FA4C92C01815141CB511249C33BDBE08&guid=829787700",
+			    "type": "华语 李行亮",
+				"lyric": ""
+			},
+			{
+			    "id": "8",
+			    "name": "孤单北半球",
+			    "singer": "欧得洋",
+			    "img_url": "https://y.gtimg.cn/music/photo_new/T002R150x150M00000416ihQ2ihLye.jpg?max_age=2592000",
+			    "url": "http://dl.stream.qqmusic.qq.com/C40000303xOg4AUudc.m4a?fromtag=38&vkey=DD2E4FE726EC883418D1CF7FC4D5824FFAADB1B3B03A864D175B4B6E3C5B2FA3C93D44DA99D87613FA4C92C01815141CB511249C33BDBE08&guid=829787700",
+			    "type": "华语 欧得洋",
+				"lyric": ""
+			},
+			{
+			    "id": "9",
+			    "name": "最熟悉的陌生人",
+			    "singer": "萧亚轩",
+			    "img_url": "https://y.gtimg.cn/music/photo_new/T002R150x150M000000Cywix0MAwfk.jpg?max_age=2592000",
+			    "url": "http://dl.stream.qqmusic.qq.com/C400003HVov811KN0l.m4a?fromtag=38&vkey=4C98723463185558443D78377766B199BC5A5DD60AE984C99F6096F1B71D6476BBD0BA839A761406FF08328796A046354EEA8ADBF495601D&guid=829787700",
+			    "type": "华语 萧亚轩",
+				"lyric": ""
+			}
+		]
+	}
+}

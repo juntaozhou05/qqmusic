@@ -15,7 +15,7 @@
         <h2>电台</h2>
         <ul>
           <li>
-            <router-link :to="{name:'musicOne'}">
+            <router-link :to="{name:'musicOne',query: {listId:-1}}">
               <div>
                 <img :src="picUrl1" alt="">
                 <span class="icon_play"></span>
@@ -37,8 +37,8 @@
       <div class="mod_hotList">
         <h2>热门歌单</h2>
         <ul>
-          <li v-for="item in songList">
-            <router-link :to="{name:'recom'}">
+          <li v-for="item,index in songList">
+            <router-link :to="{name:'musicOne',query: {listId:index}}">
               <div>
                 <img :src="item.picUrl" alt="">
               </div>
