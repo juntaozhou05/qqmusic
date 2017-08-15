@@ -1,0 +1,70 @@
+{
+	"music": {
+		"topImg":"https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=2626b1e71738534388cf8023a312b01f/9c16fdfaaf51f3dea783fbef93eef01f3a297903.jpg",
+		"list": [
+			{
+			    "id": "1",
+			    "name": "七里香",
+			    "singer": "周杰伦",
+			    "img_url": "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1487613687,1702073875&fm=58&u_exp_0=920580072,1368768465&fm_exp_0=86&bpow=903&bpoh=1001",
+			    "url": "http://up.mcyt.net/md5/17/MTAyMDY1NzU2_Qq4329912.mp3",
+			    "type": "华语 周杰伦",
+				"lyric": ""
+			},
+			{
+			    "id": "2",
+			    "name": "龙卷风",
+			    "singer": "周杰伦",
+			    "img_url": "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1109446105,2058547762&fm=58&bpow=400&bpoh=400",
+			    "url": "http://up.mcyt.net/md5/17/OTc3NTg=_Qq4329912.mp3",
+			    "type": "华语 周杰伦",
+				"lyric": ""
+			},
+			{
+			    "id": "3",
+			    "name": "开不了口",
+			    "singer": "周杰伦",
+			    "img_url": "https://ss0.baidu.com/73F1bjeh1BF3odCf/it/u=3846167064,3100025902&fm=96",
+			    "url": "http://up.mcyt.net/md5/17/OTc3NDU=_Qq4329912.mp3",
+			    "type": "华语 周杰伦",
+				"lyric": ""
+			},
+			{
+			    "id": "4",
+			    "name": "最长的电影",
+			    "singer": "周杰伦",
+			    "img_url": "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3807289655,3233136218&fm=58&bpow=400&bpoh=540",
+			    "url": "http://up.mcyt.net/md5/17/NTE3Nzc4NQ_Qq4329912.mp3",
+			    "type": "华语 周杰伦",
+				"lyric": ""
+			},
+			{
+			    "id": "5",
+			    "name": "星晴",
+			    "singer": "周杰伦",
+			    "img_url": "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2018471261,2130546611&fm=58&bpow=599&bpoh=600",
+			    "url": "http://up.mcyt.net/md5/53/MTU2NDk4_Qq4329912.mp3",
+			    "type": "华语 周杰伦",
+				"lyric": ""
+			},
+			{
+			    "id": "6",
+			    "name": "晴天",
+			    "singer": "周杰伦",
+			    "img_url": "https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=3760620055,812792957&fm=85&s=122265A0CE532DE71E907B050300F0D1",
+			    "url": "http://up.mcyt.net/md5/53/MjI4OTA4_Qq4329912.mp3",
+			    "type": "华语 周杰伦",
+				"lyric": ""
+			},
+			{
+			    "id": "7",
+			    "name": "千里之外",
+			    "singer": "周杰伦",
+			    "img_url": "https://ss0.baidu.com/73t1bjeh1BF3odCf/it/u=969471191,1927479861&fm=85&s=41703BC6ED130DD45378ACA30300E093",
+			    "url": "http://up.mcyt.net/md5/53/OTQ5MTYxNw_Qq4329912.mp3",
+			    "type": "华语 周杰伦",
+				"lyric": ""
+			}
+		]
+	}
+}

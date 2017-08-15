@@ -6,7 +6,7 @@
       <div class="title">{{title}}</div>
     </div>
     <div class="list">
-      <router-link :to="{name:'musicDetail',query: {id:item.id, type:type}}" class="item" v-for="item,index in list">
+      <router-link :to="{name:'musicDetail',query: {id:item.id, type:type, listId:listId}}" class="item" v-for="item,index in list">
         <div class="left">{{index+1}}</div>
         <div class="right">
           <div class="top">{{item.name}}</div>
@@ -14,6 +14,11 @@
         </div>
       </router-link>
     </div>
+    <footer class="footer">
+      <div class="bottom">
+        <img src="http://y.gtimg.cn/mediastyle/mod/mobile/img/logo.svg" alt="" width="24" height="24" class="music_logo"><span class="load">下载榜单歌曲</span>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -26,6 +31,7 @@ export default {
       topImg: '',
       title: '一人一招牌歌',
       type:1,
+      listId:1,
       list: []
     }
   },
@@ -41,12 +47,14 @@ export default {
     load: function() {
       let jsonAdre = '';
       let listId = this.$route.query.listId;
+      this.listId = this.$route.query.listId;
       if(listId == -1) {
         jsonAdre = '../../musicOne.json';
       }else if(listId == 0) {
-        jsonAdre = '../../musicOne.json';
+        jsonAdre = '../../music0.json';
       }else if(listId == 1) {
-        jsonAdre = '../../musicOne.json';
+        this.title = "经典歌曲";
+        jsonAdre = '../../music1.json';
       }else if(listId == 2) {
         jsonAdre = '../../musicOne.json';
       }else if(listId == 3) {
@@ -106,6 +114,7 @@ export default {
       background: rgb(125, 36, 37);
       color:white;
       font-size: 15px;
+      padding-bottom: 55px;
       .item {
         display: flex;
         padding:5px;
@@ -127,7 +136,29 @@ export default {
           }
         }
       }
-      
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left:0;
+      text-align: center;
+      width: 100%;
+      background-color: #7d2425;
+      padding:10px 0;
+      .bottom {
+        display: inline-block;
+        width: 94%;
+        text-align: center;
+        border:1px solid white;
+        padding:8px 0;
+        color:white;
+        font-size: 16px;
+        border-radius: 3px;
+        img {
+          vertical-align: bottom;
+          margin-right: 10px;
+        }
+      }
     }
   }
 </style>

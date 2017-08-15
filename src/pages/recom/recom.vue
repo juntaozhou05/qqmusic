@@ -5,7 +5,7 @@
       <div class="swipe">
         <mt-swipe :auto="4000">
           <mt-swipe-item v-for='item,index in slider'>
-            <router-link :to="{name:'musicTop',query: {id:index}}">
+            <router-link :to="{name:'musicOne',query: {listId:1}}">
               <img :src="item.picUrl" alt="" width="100%" height="100%">
             </router-link>
           </mt-swipe-item>

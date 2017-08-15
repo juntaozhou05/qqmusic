@@ -1,0 +1,70 @@
+{
+	"music": {
+		"topImg":"https://ss0.baidu.com/73F1bjeh1BF3odCf/it/u=1330672566,3881150551&fm=85&s=CD08A6561C816843168B9D7B0300B01B",
+		"list": [
+			{
+			    "id": "1",
+			    "name": "卜卦",
+			    "singer": "崔子格",
+			    "img_url": "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=4083055740,3212682449&fm=58&u_exp_0=3516022125,2879377039&fm_exp_0=86&bpow=1920&bpoh=1280",
+			    "url": "http://so1.111ttt.com:8282/2015/1/04m/02/97022139046.m4a?tflag=1502786945&pin=d2a80f790fa4b1c43fd5a76bceea31cc&ip=125.70.0.141#.mp3",
+			    "type": "华语 崔子格",
+				"lyric": ""
+			},
+			{
+			    "id": "2",
+			    "name": "不再联系",
+			    "singer": "夏天Alex",
+			    "img_url": "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2377463813,1872447191&fm=58&u_exp_0=1810430198,1539141781&fm_exp_0=86&bpow=690&bpoh=1035",
+			    "url": "http://up.mcyt.net/md5/17/MTM4MzcxNQ_Qq4329912.mp3",
+			    "type": "华语 夏天Alex",
+				"lyric": ""
+			},
+			{
+			    "id": "3",
+			    "name": "真的爱你",
+			    "singer": "BEYOND",
+			    "img_url": "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1387625405,163601204&fm=58",
+			    "url": "http://so1.111ttt.com:8282/2015/1/07m/01/100011417183.m4a?tflag=1502787224&pin=5bb64b14ec2c193d11802bc508e57ffe&ip=125.70.0.141#.mp3",
+			    "type": "华语 BEYOND",
+				"lyric": ""
+			},
+			{
+			    "id": "4",
+			    "name": "轻轻的告诉你",
+			    "singer": "杨钰莹",
+			    "img_url": "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2831153232,3180810761&fm=58&u_exp_0=2264119617,2847505351&fm_exp_0=86&bpow=740&bpoh=1080",
+			    "url": "http://so1.111ttt.com:8282/2015/1/01m/28/94281625216.m4a?tflag=1502787342&pin=577a2d446d83b9bb93ebaeefb896c39e&ip=125.70.0.141#.mp3",
+			    "type": "华语 杨钰莹",
+				"lyric": ""
+			},
+			{
+			    "id": "5",
+			    "name": "单身情歌",
+			    "singer": "林志炫",
+			    "img_url": "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1972955785,577827678&fm=58&u_exp_0=1405922170,244522268&fm_exp_0=86&bpow=668&bpoh=946",
+			    "url": "http://up.mcyt.net/md5/17/NDkyNDgxMw_Qq4329912.mp3",
+			    "type": "华语 林志炫",
+				"lyric": ""
+			},
+			{
+			    "id": "6",
+			    "name": "眉飞色舞",
+			    "singer": "郑秀文",
+			    "img_url": "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3526616662,3478556906&fm=58&u_exp_0=2959583047,3145251496&fm_exp_0=86&bpow=2754&bpoh=3543",
+			    "url": "http://so1.111ttt.com:8282/2015/1/03m/21/96212006013.m4a?tflag=1502787363&pin=ad66cfe207de2379dd7ea5c009ae41b2&ip=125.70.0.141#.mp3",
+			    "type": "华语 郑秀文",
+				"lyric": ""
+			},
+			{
+			    "id": "7",
+			    "name": "认真的雪",
+			    "singer": "薛之谦",
+			    "img_url": "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=624970179,1310262964&fm=58&u_exp_0=57936564,976957554&fm_exp_0=86&bpow=700&bpoh=1244",
+			    "url": "http://up.mcyt.net/md5/53/NjI1Mjk0_Qq4329912.mp3",
+			    "type": "华语 薛之谦",
+				"lyric": ""
+			}
+		]
+	}
+}

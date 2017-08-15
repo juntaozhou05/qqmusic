@@ -7,8 +7,8 @@
         <div class="name">{{name}}</div>
         <div class="singer">{{singer}}</div>
         <div class="img">
-          <img src="../../static/img/cd-mine.png" alt="" width="250">
-          <img :src="img_url" alt="" class="img_url cir" :class="{paused: !play, running: play}" width="165" ref="imgUrl">
+         <!--  <img class="cd" src="../../static/img/cd-mine.png" alt="" > -->
+          <img :src="img_url" alt="" class="img_url cir" :class="{paused: !play, running: play}" ref="imgUrl">
         </div> 
       </div>
       <div class="lyric">暂无相关歌词</div>
@@ -56,6 +56,7 @@ export default {
   mounted: function() {
     Indicator.open();
     this.type = this.$route.query.type;
+    this.listId = this.$route.query.listId;
     if(this.type == 1) {
       this.jsonAdre = '../../musicOne.json';
     }else if(this.type == 4){
@@ -63,6 +64,13 @@ export default {
     }else {
       this.jsonAdre = '../../musicList.json'
     };
+
+    
+    if(this.listId == 0) {
+      this.jsonAdre = '../../music0.json';
+    }else if(this.listId == 1) {
+      this.jsonAdre = '../../music1.json';
+    }
     this.load();
   },
   methods: {
@@ -170,15 +178,18 @@ export default {
         }
         .img {
           margin-top: 20px;
+          position: relative;
+          .cd {
+            width: 70%;
+          }
           .img_url {
             border-radius: 50%;
-            position: absolute;
-            top:179px;
-            left:78px;
+            width: 260px;
+            height: 260px;
           }
         }
         .cir {
-          animation:circle 20s infinite linear;
+          animation:circle 50s infinite linear;
           position: relative;
         }
         .paused {
