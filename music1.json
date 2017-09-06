@@ -64,6 +64,33 @@
 			    "url": "http://up.mcyt.net/md5/53/NjI1Mjk0_Qq4329912.mp3",
 			    "type": "华语 薛之谦",
 				"lyric": ""
+			},
+			{
+			    "id": "8",
+			    "name": "潇洒走一回",
+			    "singer": "叶倩文",
+			    "img_url": "http://oeff2vktt.bkt.clouddn.com/image/75.jpg",
+			    "url": "http://up.mcyt.net/md5/53/ODc1MzM=_Qq4329912.mp3",
+			    "type": "华语 叶倩文",
+				"lyric": ""
+			},
+			{
+			    "id": "9",
+			    "name": "半壶纱",
+			    "singer": "刘珂矣",
+			    "img_url": "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2232292688,128410182&fm=58&u_exp_0=1665259073,4090072068&fm_exp_0=86&bpow=449&bpoh=443",
+			    "url": "http://up.mcyt.net/md5/53/NDg1NTU2OQ_Qq4329912.mp3",
+			    "type": "华语 刘珂矣",
+				"lyric": ""
+			},
+			{
+			    "id": "10",
+			    "name": "胆小鬼",
+			    "singer": "梁咏琪",
+			    "img_url": "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3646648840,3393456149&fm=58&u_exp_0=3079615225,3060150739&fm_exp_0=86&bpow=800&bpoh=1067",
+			    "url": "http://up.mcyt.net/md5/53/MTY1NzY2_Qq4329912.mp3",
+			    "type": "华语 梁咏琪",
+				"lyric": ""
 			}
 		]
 	}
