@@ -1,18 +1,22 @@
-# new
 
-> A Vue.js project
+>一个vue2的项目 
 
-## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+# 安装项目
+git clone https://github.com/juntaozhou05/qqmusic.git
 
-# serve with hot reload at localhost:8080
+# 安装项目依赖
+npm i
+
+# 运行开发
 npm run dev
 
-# build for production with minification
+# 运行生产环境
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+>项目相关图片
+![img](1.png)  ![img](2.png)
+
+![img](3.png)  ![img](4.png)
