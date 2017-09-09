@@ -18,6 +18,8 @@ npm run build
 
 [预览地址](http://www.juntaozhou.cn/music/#/recom)
 
+json数据就在项目文件夹里，是网上扒下来的，可能有些链接过期了。
+
 #项目相关图片
 
 
