@@ -16,6 +16,8 @@ npm run dev
 npm run build
 ```
 
+[预览地址](http://www.juntaozhou.cn/music/#/recom)
+
 #项目相关图片
 
 
