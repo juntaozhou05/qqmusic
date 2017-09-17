@@ -16,7 +16,7 @@ npm run dev
 npm run build
 ```
 
-[预览地址](http://www.juntaozhou.cn/music/#/recom)
+[预览地址](http://www.juntaozhou.cn/music/#/recom)(请模拟手机端浏览)
 
 json数据就在项目文件夹里，是网上扒下来的，可能有些链接过期了。
 
